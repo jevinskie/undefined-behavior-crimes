@@ -1,6 +1,6 @@
 TARGETS := blocks-not-nested-functions
 
-CFLAGS := -Wall -Wextra -Wpedantic -Wno-gnu-statement-expression -g -std=c17 $(CFLAGS)
+CFLAGS := -Wall -Wextra -Wpedantic -Wno-gnu-statement-expression -g -Ofast -flto=full --std=c17 $(CFLAGS)
 
 all: $(TARGETS)
 .PHONY: clean

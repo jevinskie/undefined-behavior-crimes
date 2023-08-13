@@ -110,7 +110,7 @@ void no_nested_function_here_evil_broken(void) {
     t v;                                                                                           \
     UNCONST_TYPE(v) *const __ptr_##v = &v;                                                         \
     v
-#define BLK_VAR_ACCESS(n) *(__ptr_##n)
+#define BLK_VAR_ACCESS(v) *(__ptr_##v)
 void no_nested_function_here_evil(void) {
     BLK_VAR_DECL(int, i) = 42;
     printf("i: %d\n", i);
