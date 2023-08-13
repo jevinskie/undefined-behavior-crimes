@@ -1,0 +1,48 @@
+calling no_nested_function_here_used_block_type()
+
+
+i: 42
+block i: 43
+i: 86
+block i: 87
+i: 87
+
+
+
+done
+calling no_nested_function_here_use_ptr
+
+
+i: 42
+block i: 43
+i: 86
+block i: 87
+i: 87
+
+
+
+done
+calling no_nested_function_here_evil_broken
+
+
+i: 42
+block i: 43
+i: 84
+block i: 44
+i: 84
+
+
+
+done
+calling no_nested_function_here_evil
+
+
+i: 42
+block i: 43
+i: 86
+block i: 87
+i: 87
+
+
+
+done
